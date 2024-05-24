@@ -12,8 +12,8 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
 - **JWT** para autenticación
 
 ### Frontend
-- **React** 
-- **Bootstrap** para el diseño responsivo
+- **React en NextJS** 
+- **Tailwind** para el diseño responsivo
 
 ### Otros
 - **Docker** para contenedores
@@ -44,10 +44,7 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
 ### Pasos para Configurar el Proyecto
 
 1. Clona el repositorio:
-    ```sh
-    git clone https://*******
-    cd sistema-gestion-eventos
-    ```
+
 
 2. Configura el Backend:
 
@@ -58,11 +55,7 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
     ```
 
 3. Configura el Frontend:
-    ```sh
-    cd frontend
-    npm install
-    ```
-
+  
 4. Configura las Variables de Entorno:
 
     Crea un archivo `.env` en la carpeta del backend con las siguientes variables:
@@ -75,17 +68,9 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
 5. Inicia los Servicios:
 
     **Backend:**
-    ```sh
-    cd backend
-    npm start (o python app.py)
-    ```
-
+ 
     **Frontend:**
-    ```sh
-    cd frontend
-    npm start
-    ```
-
+ 
 ### Uso de Docker
 
 1. Construye y corre los contenedores:
@@ -113,7 +98,7 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
 
 Los endpoints de la API y sus descripciones se pueden encontrar en el archivo `API_DOCUMENTATION.md` en la raíz del repositorio.
 
-## Pruebas
+*/## Pruebas
 
 1. Ejecuta las pruebas del Backend:
     ```sh
@@ -129,7 +114,7 @@ Los endpoints de la API y sus descripciones se pueden encontrar en el archivo `A
 
 ## CI/CD
 
-El pipeline de CI/CD está configurado utilizando **GitHub Actions**. Cada vez que se hace un push al repositorio, se ejecutan las pruebas automáticamente.
+///El pipeline de CI/CD está configurado utilizando **GitHub Actions**. Cada vez que se hace un push al repositorio, se ejecutan las pruebas automáticamente.*/
 
 ## Contribuciones
 
