@@ -31,90 +31,15 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
 6. **Eliminar Evento**
 7. **Ver Detalles de un Evento**
 
-## Configuración del Entorno de Desarrollo
-
-### Prerrequisitos
-
-- **Node.js** y **npm** 
-- **Python** y **pip**
-- **Docker Desktop**
-- **Visual Studio Code** (u otro editor de código)
-- **PostgreSQL** (puedes usar una base de datos local o un servicio en la nube)
-
 ### Pasos para Configurar el Proyecto
 
-1. Clona el repositorio:
+1. Clona el repositorio.
+
+2. docker compose up --build
+
+   
 
 
-2. Configura el Backend:
-
- **Python/Flask:**
-    ```sh
-    cd backend
-    pip install -r requirements.txt
-    ```
-
-3. Configura el Frontend:
-  
-4. Configura las Variables de Entorno:
-
-    Crea un archivo `.env` en la carpeta del backend con las siguientes variables:
-    ```env
-    PORT=5000
-    DB_URL=PostgreSQL://localhost:27017/eventos 
-    JWT_SECRET=your_secret_key
-    ```
-
-5. Inicia los Servicios:
-
-    **Backend:**
- 
-    **Frontend:**
- 
-### Uso de Docker
-
-1. Construye y corre los contenedores:
-    ```sh
-    docker-compose up --build
-    ```
-
-2. Accede a la aplicación en el navegador:
-    - Frontend: `http://localhost:3000`
-    - Backend: `http://localhost:5000`
-
-## Despliegue
-
-### Despliegue del Backend
-
-1. Crea una cuenta en  **Vercel**.
-2. Sube el backend Vercel siguiendo las instrucciones de su documentación.
-
-### Despliegue del Frontend
-
-1. Crea una cuenta en **Netlify** (o **Vercel**).
-2. Conecta el repositorio y despliega el frontend siguiendo las instrucciones de su documentación.
-
-## Documentación de la API
-
-Los endpoints de la API y sus descripciones se pueden encontrar en el archivo `API_DOCUMENTATION.md` en la raíz del repositorio.
-
-*/## Pruebas
-
-1. Ejecuta las pruebas del Backend:
-    ```sh
-    cd backend
-    npm test (o pytest)
-    ```
-
-2. Ejecuta las pruebas del Frontend:
-    ```sh
-    cd frontend
-    npm test
-    ```
-
-## CI/CD
-
-///El pipeline de CI/CD está configurado utilizando **GitHub Actions**. Cada vez que se hace un push al repositorio, se ejecutan las pruebas automáticamente.*/
 
 ## Contribuciones
 
