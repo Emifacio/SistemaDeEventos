@@ -1,10 +1,10 @@
 import React from 'react';
-import UserInterface from '../components/UserInterface';
+import EventInterface from '../components/EventInterface';
 
 const Home: React.FC = () => {
   return (
     <div>
-      <UserInterface backendName="flask" />
+      <EventInterface backendName="flask" />
     </div>
   );
 }
