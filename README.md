@@ -35,7 +35,15 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
 
 1. Clona el repositorio.
 
-2. docker compose up --build
+2. ingresa a la carpeta de frontend en la consola y pega este comando:
+
+**npm install next@latest react@latest react-dom@latest**
+
+3. docker compose up --build
+
+4. Ejecuta en el navegador:
+
+**localhost:3000**
 
    
 
