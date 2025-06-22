@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS  
 from os import environ
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_jwt_extended import JWTManager
+from flask_jwt_extended import JWTManager, create_access_token
 
 
 app = Flask(__name__)
@@ -143,4 +143,4 @@ def delete_event(id):
       return make_response(jsonify({'message': 'event deleted'}), 200)
     return make_response(jsonify({'message': 'event not found'}), 404) 
   except Exception as e:
-    return make_response(jsonify({'message': 'error deleting event', 'error': str(e)}), 500) 
+    return make_response(jsonify({'message': 'error deleting event', 'error': str(e)}), 500)
