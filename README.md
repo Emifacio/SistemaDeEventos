@@ -44,6 +44,16 @@ El objetivo de este proyecto es desarrollar un sistema básico de gestión de ev
 4. Ejecuta en el navegador:
 
 **localhost:3000**
+## Ejecutar Pruebas
+
+Para correr las pruebas del backend se utiliza `pytest`. Instala las dependencias y ejecuta:
+
+```bash
+pip install -r backend/requirements.txt
+pip install pytest
+pytest
+```
+
 
    
 
