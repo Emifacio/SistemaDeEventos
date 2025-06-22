@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS  
 from os import environ
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_jwt_extended import JWTManager
+from flask_jwt_extended import JWTManager, create_access_token
 
 
 app = Flask(__name__)
@@ -63,9 +63,15 @@ class Event(db.Model):
     date = db.Column(db.String(80), nullable=False)
     location = db.Column(db.String(120), nullable=False)
     description = db.Column(db.String(200))
-    
-def json(self):
-    return {'id': self.id,'name': self.name, 'date': self.date, 'location': self.location, 'description': self.description}
+
+    def json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'date': self.date,
+            'location': self.location,
+            'description': self.description
+        }
   
 db.create_all()
 
