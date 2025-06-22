@@ -104,7 +104,7 @@ def get_events():
   except Exception as e:
     return make_response(jsonify({'message': 'error getting events', 'error': str(e)}), 500)
   
-# get a event by id
+# get an event by id
 @app.route('/api/flask/events/<id>', methods=['GET'])
 def get_event(id):
   try:
@@ -132,7 +132,7 @@ def update_event(id):
   except Exception as e:
       return make_response(jsonify({'message': 'error updating event', 'error': str(e)}), 500)
 
-# delete a event by id
+# delete an event by id
 @app.route('/api/flask/events/<id>', methods=['DELETE'])
 def delete_event(id):
   try:
