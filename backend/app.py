@@ -63,9 +63,15 @@ class Event(db.Model):
     date = db.Column(db.String(80), nullable=False)
     location = db.Column(db.String(120), nullable=False)
     description = db.Column(db.String(200))
-    
-def json(self):
-    return {'id': self.id,'name': self.name, 'date': self.date, 'location': self.location, 'description': self.description}
+
+    def json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'date': self.date,
+            'location': self.location,
+            'description': self.description
+        }
   
 db.create_all()
 
